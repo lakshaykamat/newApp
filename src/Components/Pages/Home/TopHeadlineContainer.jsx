@@ -3,13 +3,13 @@ import NewsItem from "../../Common/NewsItem";
 export default function TopHeadlineContainer(props) {
   return (
     <div className="m-3 sm:m-auto md:max-w-7xl">
-      <div className="flex justify-center sm:justify-between flex-wrap items-ceneter mx-6 mb-14">
+      <div className="flex justify-center sm:justify-between flex-wrap items-ceneter mx-3 mb-14">
         <div className="text-start">
           <h1 className="my-3 md:max-w-7xl text-4xl font-bold text-start">
             Top Headlines
           </h1>
         </div>
-        <div className="flex gap-5 flex-wrap justify-center items-center">
+        <div className="flex gap-5 justify-center items-center">
           <div>
             <label
               for="countries"
