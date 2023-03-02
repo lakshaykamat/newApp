@@ -12,7 +12,7 @@ export default function TopHeadlineContainer(props) {
         <div className="flex gap-5 justify-center items-center">
           <div>
             <label
-              for="countries"
+              htmlFor="countries"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Category
@@ -21,7 +21,7 @@ export default function TopHeadlineContainer(props) {
               id="category"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             >
-              <option selected>Choose a Category</option>
+              {/* <option defaultValue={'enta'}>Category</option> */}
               <option 
               value="US">Bussiness</option>
               <option value="entertainment">Entertainment</option>
@@ -34,7 +34,7 @@ export default function TopHeadlineContainer(props) {
           </div>
           <div>
             <label
-              for="countries"
+              htmlFor="countries"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Select an option
@@ -43,7 +43,7 @@ export default function TopHeadlineContainer(props) {
               id="countries"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             >
-              <option selected>Choose a country</option>
+              {/* <option selected>Country</option> */}
               <option value="US">United States</option>
               <option value="CA">Canada</option>
               <option value="FR">France</option>
@@ -53,7 +53,7 @@ export default function TopHeadlineContainer(props) {
         </div>
       </div>
 
-      <div className="m-3 flex justify-start items-center flex-wrap gap-4">
+      <div className=" mx-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-stretch">
         {props.newsArticles.map((news, index) => {
           return (
             <NewsItem

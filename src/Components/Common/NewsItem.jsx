@@ -8,10 +8,11 @@ export default function NewsItem({
   url,
   publishedAt,
 }) {
+  const BACKUP_IMAGE = "https://static.vecteezy.com/system/resources/thumbnails/004/216/831/original/3d-world-news-background-loop-free-video.jpg"
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img className="rounded-t-lg" src={image} alt="" />
+        <img className="rounded-t-lg" src={image === null ? BACKUP_IMAGE : image} alt="" />
       </a>
       <div className="p-5">
         <a href="#">
